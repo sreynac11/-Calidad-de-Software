@@ -1,19 +1,4 @@
-package prykualiatl;
-import java.io.*;
-import javax.swing.*;
-import jxl.write.*;
-import jxl.*;
 
-public class ExcelTableExporter {
-     private File archivo;
-    private JTable tabla;
-    private String nombreTabla;
-
-    public ExcelTableExporter(JTable tabla, File archivo, String nombreTabla) {
-        this.archivo = archivo;
-        this.tabla = tabla;
-        this.nombreTabla = nombreTabla;
-    }
 
     public boolean export()
     {
