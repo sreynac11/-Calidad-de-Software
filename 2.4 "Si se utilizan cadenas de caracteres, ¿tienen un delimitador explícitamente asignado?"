@@ -1,27 +1,4 @@
-package prykualiatl;
-import java.sql.*;
-import javax.swing.table.DefaultTableModel;
 
-public class ConnectionDB
-{
-    private ResultSet resultado;
-    private Connection miCon;
-    public String bd = "dbkuali";
-    public String login = "choco";
-    public String password = "sa";
-    public String url = "jdbc:mysql://localhost:3306/" + this.bd;
-    
-    public void doConnection()
-    {
-        try
-        {
-            Class.forName("com.mysql.jdbc.Driver");
-            miCon = DriverManager.getConnection(url, login, password);
-        } catch (Exception e)
-          {
-            e.printStackTrace();
-          }
-    }
 
     public DefaultTableModel getModelBySqlCommand(String SqlCmd)
     {
